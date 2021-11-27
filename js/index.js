@@ -15,12 +15,12 @@ handleDisabled();
 // Bài 2 lấy tài khoản và mật khẩu người dùng và thông báo nó lên
 
 const handleLogin = () => {
-  const getUserName = document.getElementById("username");
-  const getPassWord = document.getElementById("password");
-  const getInformation = document.getElementById("notify");
+  const getUserName = document.querySelector("#username");
+  const getPassWord = document.querySelector("#password");
+  const getInformation = document.querySelector("#notify");
 
   // nhấn nút Đăng Nhập để lấy thông tin người dùng\
-  return (document.getElementById("btnLogin").onclick = () => {
+  return (document.querySelector("#btnLogin").onclick = () => {
     getInformation.innerHTML = `Tài khoản của bạn: ${getUserName.value}, mật khẩu của bạn: ${getPassWord.value}`;
     getInformation.style.backgroundColor = "green";
     getInformation.style.color = "white";
