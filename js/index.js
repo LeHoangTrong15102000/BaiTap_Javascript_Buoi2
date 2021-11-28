@@ -20,7 +20,7 @@ const handleLogin = () => {
   const getInformation = document.querySelector("#notify");
 
   // nhấn nút Đăng Nhập để lấy thông tin người dùng\
-  return (document.querySelector("#btnLogin").onclick = () => {
+  return document.querySelector("#btnLogin").addEventListener("click", () => {
     getInformation.innerHTML = `Tài khoản của bạn: ${getUserName.value}, mật khẩu của bạn: ${getPassWord.value}`;
     getInformation.style.backgroundColor = "green";
     getInformation.style.color = "white";
